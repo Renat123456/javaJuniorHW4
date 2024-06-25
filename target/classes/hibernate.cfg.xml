@@ -1,0 +1,14 @@
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/test</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">996633</property>
+        <property name="show_sql">true</property>
+        <!--  none, create, create-drop, update, validate -->
+        <property name="hibernate.hbm2ddl.auto">create</property>
+        <mapping class="org.example.Main"/>
+        <mapping class="org.example.Post"/>
+        <mapping class="org.example.PostComment"/>
+    </session-factory>
+</hibernate-configuration>
